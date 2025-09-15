@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Handcrafted concrete bookends in 16 colors. Modern, minimalist home décor by J.C Epiphany – locally made in Jamaica. Custom options &amp; gift sets available.">
+  <title>Concrete Bookends by J.C Epiphany – Modern, Handcrafted Bookends for Inspired Living</title>
+
+  <!-- Google Fonts: Montserrat -->
+  <link href="./index_files/css2" rel="stylesheet">
+
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      line-height: 1.7;
+      background-color: #f8f8f8;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Montserrat', sans-serif;
+      color: #333333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    /* Header & Logo */
+    header {
+      text-align: center;
+      padding: 30px 0 20px;
+    }
+
+    .logo {
+      width: 220px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+    }
+
+    .tagline {
+      font-size: 1.8em;
+      color: #DAA520;
+      font-weight: 600;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: #fff;
+    }
+
+    .hero h1 {
+      font-size: 2.8em;
+      margin-bottom: 20px;
+    }
+
+    .accent {
+      color: #DAA520;
+    }
+
+    .hero p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.15em;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #DAA520;
+      color: white;
+      padding: 14px 32px;
+      margin: 25px 0 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #c8961e;
+    }
+
+    /* Section Styling */
+    .section {
+      padding: 40px 0;
+      background: #fff;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 15px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #666;
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 50px;
+      font-size: 1.1em;
+    }
+
+    /* Product Gallery (6 Bookends) */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 15px;
+      margin: 40px auto;
+      max-width: 1200px;
+    }
+
+    .gallery-item {
+      text-align: center;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .gallery-item p {
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 0.95em;
+    }
+
+    /* Color Palette */
+    .color-palette {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px auto;
+      max-width: 1000px;
+    }
+
+    .color-swatch {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 0.8em;
+      text-shadow: 0 0 4px rgba(0,0,0,0.7);
+    }
+
+    /* CTA Section */
+    .cta {
+      text-align: center;
+      background: #DAA520;
+      color: white;
+      padding: 60px 20px;
+    }
+
+    .cta h2 {
+      color: white;
+      font-size: 2.2em;
+      margin-bottom: 15px;
+    }
+
+    .cta .btn {
+      background: #333;
+      color: white;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 50px 0 30px;
+    }
+
+    footer a {
+      color: #fff;
+    }
+
+    footer .contact-info {
+      color: #fff;
+    }
+
+    footer h3 {
+      color: #fff;
+    }
+
+    .footer-links {
+      margin: 20px 0;
+    }
+
+    .footer-links a {
+      color: #DAA520;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-info {
+      margin: 20px 0;
+      font-size: 0.95em;
+      line-height: 1.8;
+    }
+
+    .copyright {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .hero h1 {
+        font-size: 2.2em;
+      }
+      .section-title {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Centered Logo and Tagline -->
+  <header>
+    <img src="images/JC HOME logo.png" alt="J.C Epiphany Logo" class="logo">
+    <div class="tagline">"Modern, Handcrafted Bookends for Inspired Living."</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Modern, Handcrafted <span class="accent">Concrete Bookends</span></h1>
+      <p>At J.C Epiphany, we believe everyday objects should be both beautiful and functional. Our handcrafted concrete bookends combine minimalist design with artisanal craftsmanship, offering timeless décor pieces that bring order and style to your space.</p>
+      <a href="https://jcepiphany.myshopify.com/collections/j-c-epiphany-home" class="btn">Shop the Collection</a>
+    </div>
+  </section>
+
+  <!-- Product Gallery: 6 Bookend Types -->
+  <section class="section" style="background:#f9f9f9;">
+    <div class="container">
+      <h2 class="section-title">Explore Our <span class="accent">Bookend Designs</span></h2>
+      <p class="section-subtitle">Each style is available in 16 base colors with optional accent tones. Durable, stylish, and designed to last.</p>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="images/Axis bookend light blue.png" alt="Axis Bookend – Sleek rectangular design">
+          <p>Axis Bookend</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/dome bookend green.png" alt="Dome Bookend – Soft curved edges">
+          <p>Dome Bookend</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Pillar bookend charcoal grey.png" alt="Pillar Bookend – Tall and elegant">
+          <p>Pillar Bookend</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/The summt bookend blush pink.png" alt="Summit Bookend – Geometric peak">
+          <p>Summit Bookend</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/The wave bookend concrete grey.png" alt="Wave Bookend – Flowing organic shape">
+          <p>Wave Bookend</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/The wedge bookend turquoise.png" alt="Wedge Bookend – Minimalist triangle">
+          <p>Wedge Bookend</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Products & Services -->
+  <section class="section">
+    <div class="container" style="text-align:center; max-width:800px; margin:auto;">
+      <h2 style="font-size:2.2em; font-weight:700; margin-bottom:10px;">Concrete, Reimagined</h2>
+      <p style="font-size:1.15em; margin-bottom:18px; color:#555;">From bookends to everyday accents, discover décor that blends strength, beauty, and function.</p>
+      <h3 style="color:#DAA520; font-size:1.15em; margin-bottom:8px; margin-top:18px; font-weight:600;">Our Collection</h3>
+      <p style="font-size:1em; color:#333; margin-bottom:0;">Bookends, trays, coasters, planters, holders, bowls, jewelry &amp; more — all crafted by hand.</p>
+    </div>
+  </section>
+
+  <!-- Color Palette -->
+  <section class="section" style="background:#f9f9f9;">
+    <div class="container">
+      <h2 class="section-title">Available in <span class="accent">16 Curated Colors</span></h2>
+      <p class="section-subtitle">Choose your base color. Add an accent tone on select designs. Customize to match your interior style.</p>
+
+      <div class="color-palette">
+        <!-- Warm & Earthy -->
+        <div class="color-swatch" style="background:#B33B24;"><span>Barn<br>Red</span></div>
+        <div class="color-swatch" style="background:#E9967A;"><span>Blush<br>Pink</span></div>
+        <div class="color-swatch" style="background:#FADADD;"><span>Pastel<br>Pink</span></div>
+        <div class="color-swatch" style="background:#8B4C68;">Mauve</div>
+        <div class="color-swatch" style="background:#FF7F50;">Coral</div>
+        <div class="color-swatch" style="background:#CC5500;"><span>Squash<br>Orange</span></div>
+        <div class="color-swatch" style="background:#D4AF37;"><span>Mustard<br>Yellow</span></div>
+        <div class="color-swatch" style="background:#FFD700;"><span>Honey<br>Yellow</span></div>
+
+        <!-- Cool & Calm -->
+        <div class="color-swatch" style="background:#ADD8E6;"><span>Light<br>Blue</span></div>
+        <div class="color-swatch" style="background:#00008B;"><span>Dark<br>Blue</span></div>
+        <div class="color-swatch" style="background:#40E0D0;">Turquoise</div>
+        <div class="color-swatch" style="background:#008000;">Green</div>
+        <div class="color-swatch" style="background:#006400;"><span>Dark<br>Green</span></div>
+
+        <!-- Neutrals -->
+        <div class="color-swatch" style="background:#C0C0C0;"><span>Cement<br>Gray</span></div>
+        <div class="color-swatch" style="background:#333333;"><span>Charcoal<br>Gray</span></div>
+        <div class="color-swatch" style="background:#FFFFF0;"><span>Ivory<br>White</span></div>
+      </div>
+      
+      <p style="text-align: center; font-size: 0.9em; color: #666; margin-top: 15px; font-style: italic;">
+        *Visit product listing to view exact color hue
+      </p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Handmade. Sustainable. Uniquely Yours.</h2>
+    <p>Ready to add functional art to your shelves?</p>
+    <a href="https://jcepiphany.myshopify.com/collections/j-c-epiphany-home" class="btn">Shop Now on Shopify</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <h3>J.C Epiphany Limited</h3>
+      <p class="contact-info">
+        📍 Stony Hill, Kingston, Jamaica<br>
+        📞 <a href="tel:8767747372" style="color:#fff;">876-774-7372</a> (WhatsApp)<br>
+        ✉️ <a href="mailto:contact@jcepiphany.com" style="color:#fff;">contact@jcepiphany.com</a>
+      </p>
+
+      <div class="footer-links">
+        <a href="https://jcepiphany.myshopify.com/" target="_blank">Shopify Store</a>
+        <a href="https://jcepiphany.com/" target="_blank">JC Epiphany Homepage</a>
+        <a href="https://instagram.com/jc_concretedesigns" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100063662036286" target="_blank">Facebook</a>
+        <a href="https://www.pinterest.com/jc_epiphany/" target="_blank">Pinterest</a>
+        <a href="https://www.tiktok.com/@jumelisa0204" target="_blank">TikTok</a>
+        <a href="https://www.youtube.com/@jcepiphany" target="_blank">YouTube</a>
+      </div>
+
+      <p class="copyright">© 2025 J.C Epiphany Limited. All rights reserved.<br>Built with care in Jamaica.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
